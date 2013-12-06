@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Translation Locales files -->
+	<script src="locales/FR_fr.js"></script>
+	<script src="locales/EN_en.js"></script>
+	<script src="locales/RU_ru.js"></script>
+
+
+	<script src="i18nZr.js"></script>
+	<script type="text/javascript">
+		
+
+		window.addEventListener("DOMContentLoaded", onDomReady);
+
+		function onDomReady(){
+			i18nZr.registerLocales(FR_fr, EN_en, RU_ru);
+			i18nZr.setCurrentLanguage("FR_fr", true);
+		}
+	</script>
+</head>	
+<body>
+	<div id="holder">
+		<p data-i8n-key="Key1"></p>
+		<p data-i8n-key="Key2"></p>
+		<ul>
+			<li data-i8n-key="Key3"></li>
+			<li data-i8n-key="Key4"></li>
+		</ul>
+		<a href="http://www.google.com" data-i8n-key="Key5"></a>
+	</div>
+	<div id="simpleDiv">
+		<h1 data-i8n-key="Key6"></h1>
+		<h2 data-i8n-key="Key7"></h2>
+		<h3 data-i8n-key="Key8"></h3>
+	</div>
+</body>
+
+</html>
