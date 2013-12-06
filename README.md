@@ -6,7 +6,7 @@ i18nZr allows you to translate your DOM or a subpart.
 
 Based on simple i18n files formated like this : 
 ```javascript
- {
+ var FR_fr = {
 			"code":"FR_fr",
 			"values":[
 					{"key":"akey", "value":"Translated entry"},
